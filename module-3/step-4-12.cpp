@@ -1,6 +1,7 @@
 #include <vector>
 #include <list>
 #include <numeric>
+#include <iostream>
 
 template<class T>
 class VectorList {
@@ -108,5 +109,13 @@ void VectorList<T>::append(It p, It q) {
 
 int main() {
     VectorList<int> ints;
+    std::vector<int> vect1{ 1, 2, 3, 4 };
+    std::vector<int> vect2{ 5, 6, 7, 8 };
+    ints.append(vect1.begin(), vect1.end());
+    ints.append(vect2.begin(), vect2.end());
+    for (auto& item : ints) {
+        std::cout << item << ' ';
+    }
+    std::cout << std::endl;
     return 0;
 }
