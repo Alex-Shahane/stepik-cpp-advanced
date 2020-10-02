@@ -1,2 +1,2 @@
 language = "cpp"
-run = "clang++-7 -fsanitize=address -pthread -std=c++17 -o main module-5/step-3-15.cpp && ./main"
+run = "clang++-7 -fsanitize=address -pthread -std=c++17 -o main module-5/step-4-12.cpp && ./main"
